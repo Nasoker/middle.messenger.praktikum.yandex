@@ -1,0 +1,45 @@
+@use "../../../styles/variables" as v;
+
+.profile-main__info {
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid v.$border-color;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &-label {
+        font-size: v.$font-large;
+        color:#1E1E1E;
+        font-weight: 500;
+    }
+
+    &-input {
+        font-size: v.$font-large;
+        color: v.$secondary-text-color;
+        border: none;
+        outline: none;
+        background: transparent;
+        text-align: right;
+
+        &::placeholder {
+            font-size: v.$font-large;
+            color: v.$secondary-text-color;
+        }
+
+        &:focus {
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
+}

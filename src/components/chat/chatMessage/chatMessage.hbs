@@ -1,0 +1,11 @@
+<div class="chats-main__messages-message {{#ifEq type "incoming"}}incoming{{/ifEq}}">
+    <div class="chats-main__messages-message-text">{{text}}</div>
+    <div class="chats-main__messages-message-info">
+        {{#ifEq type "outgoing"}}   
+            {{#if isRead}}
+                <img src={{icons.readMessageIcon}} alt="" class="chats-main__messages-message-info-icon">
+            {{/if}}
+        {{/ifEq}}
+        <span class="chats-main__messages-message-info-time">{{date}}</span>
+    </div>
+</div>

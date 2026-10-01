@@ -1,0 +1,62 @@
+@use "../../../styles/variables" as v;
+
+.chats-main__messages-message {
+    &.incoming {
+        align-self: flex-start;
+        background: #F8F8F8;
+        border-radius: 0 10px 10px 10px;
+
+        .chats-main__messages-message-text::after {
+            width: 36px;
+        }
+
+        .chats-main__messages-message-info-time {
+            color: v.$secondary-text-color;
+        }
+    }
+
+    align-self: flex-end;
+    display: inline-block;
+    max-width: 402px;
+    padding: 11px;
+    position: relative;
+    background: #E4EDFD;
+    border-radius: 10px 10px 0 10px;
+
+    &-text {
+        margin: 0;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1E1E1E;
+        white-space: pre-wrap;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 52px;
+            height: 15px;
+            vertical-align: bottom;
+        }
+    }
+
+    &-info {
+        position: absolute;
+        right: 11px;
+        bottom: 11px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &-icon {
+            display: block;
+            flex-shrink: 0;
+        }
+
+        &-time {
+            font-size: v.$font-small;
+            line-height: 1;
+            color: #3369F3;
+            white-space: nowrap;
+        }
+    }
+}

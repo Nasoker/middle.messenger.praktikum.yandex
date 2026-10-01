@@ -1,0 +1,48 @@
+<main>
+    <div class="chats-container">
+        <div class="chats-sidebar">
+            <div class="chats-sidebar__header">
+                <a href="#" class="chats-sidebar__header-link" data-link="profile">
+                    <span class="chats-sidebar__header-link-text">Профиль</span>
+                    <img src={{icons.arrowIcon}} alt="arrow" class="chats-sidebar__header-link-icon">
+                </a>
+                <div class="chats-sidebar__search-wrapper">
+                    <img src={{icons.searchIcon}} alt="search" class="chats-sidebar__search-icon">
+                    <input type="text" class="chats-sidebar__search" placeholder="Поиск">
+                </div>  
+            </div>
+            <div class="chats-sidebar__list">
+                {{#each chats}}
+                    {{> SideBarMessage}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="chats-main">
+            <div class="chats-main__header">
+                <div class="chats-main__header-recipient">
+                    <img src={{icons.avatar}} alt="avatar" class="chats-main__header-recipient-avatar">
+                    <span class="chats-main__header-recipient-name">{{name}}</span>
+                </div>
+                <button class="chats-main__header-button">
+                    <img src={{icons.tripleDotsIcon}} class="chats-main__header-button-icon">
+                </button>
+            </div>
+            <div class="chats-main__messages">
+                <div class="chats-main__messages-wrapper">
+                    {{#each message}}
+                        {{> ChatMessage icons=../icons}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="chats-main__input">
+                <button class="chats-main__input-button">
+                    <img src={{icons.addIcon}} alt="send" class="chats-main__input-button-icon">
+                </button>
+                <input type="text" class="chats-main__input-input" placeholder="Сообщение">
+                <button class="chats-main__input-button-submit">
+                    <img src={{icons.messageIcon}} alt="message" class="chats-main__input-button-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+</main>

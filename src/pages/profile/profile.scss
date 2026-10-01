@@ -1,0 +1,87 @@
+@use "../../styles/variables" as v;
+
+.profile {
+    &-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100%;
+    }
+    &-sidebar {
+        background: #FBFBFB;
+        min-width: 64px;
+        border: 1px solid v.$border-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-main { 
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+
+        &-wrapper {
+            min-width: 510px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        &__avatar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 21px;
+
+            &-image {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            &-name {
+                margin: 0;
+            }
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+                padding: 10px 0;
+                text-align: left;
+                font-size: v.$font-large;
+                border-bottom: 1px solid v.$border-color;
+                text-decoration: none;
+                color: v.$main-color;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+                
+                &:last-child {
+                    border-bottom: none;
+                    color: #FF0000;
+                }
+            }
+        }
+
+        &__button {
+            padding: 12px 70px;
+            min-width: 280px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: v.$font-large;
+            color: #FFFFFF;
+            background: v.$main-color;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use "../../../styles/variables" as v;
+
+.submit-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: v.$main-color;
+    border-radius: 50%;
+    margin-left: 10px;
+
+    &.revert {
+        margin-left: 0;
+        
+        .submit-button-icon {
+            transform: rotate(180deg);
+        }
+    }
+} 
