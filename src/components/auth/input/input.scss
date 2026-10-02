@@ -1,0 +1,16 @@
+@use "../../../styles/variables" as v;
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 1px solid v.$main-color;
+    font-size: v.$font-size-13;
+    padding: 0;
+    
+    &__label {
+        font-size: v.$font-size-9;
+        color: v.$secondary-text-color;
+    }
+}

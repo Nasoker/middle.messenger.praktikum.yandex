@@ -1,0 +1,17 @@
+<div class="chats-sidebar__item {{#if active}}active{{/if}}">
+    <img src={{avatar}} alt="avatar" class="chats-sidebar__avatar">
+    <div class="chats-sidebar__message-wrapper">
+        <div class="chats-sidebar__message-info">
+            <h3 class="chats-sidebar__message-name">{{name}}</h3>
+            <p class="chats-sidebar__message-time">{{date}}</p>
+        </div>
+        <div class="chats-sidebar__message-info">
+            <p class="chats-sidebar__message-last">{{lastMessage}}</p>
+            {{#if unreadCount}}
+                <div class="chats-sidebar__message-count-wrapper">
+                    <p class="chats-sidebar__message-count">{{unreadCount}}</p>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

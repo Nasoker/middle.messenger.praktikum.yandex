@@ -1,0 +1,31 @@
+<main>
+    <div class="profile-container">
+        <div class="profile-sidebar">
+            {{> SubmitButton icons=icons link=back styleClass="revert"}}
+        </div>
+        <div class="profile-main">
+            <div class="profile-main-wrapper">
+                <div class="profile-main__avatar">
+                    <img src={{icons.avatar}} alt="avatar" class="profile-main__avatar-image">
+                    <p class="profile-main__avatar-name">{{name}}</p>
+                </div>
+                <div class="profile-main__info-list">
+                    {{#each info}}
+                        {{> ProfileInput}}
+                    {{/each}}
+                </div>
+                {{#if links}}
+                    <div class="profile-main__links">
+                        {{#each links}}
+                            <a href="#" class="profile-main__links-item {{styleClass}}" data-link={{url}}>{{text}}</a>
+                        {{/each}}
+                    </div>
+                {{/if}}
+                {{#if button}}
+                    <button class="profile-main__button" data-link={{back}}>Сохранить</button>
+                {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
