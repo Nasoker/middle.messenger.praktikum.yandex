@@ -3,7 +3,7 @@
     <div class="chats-main__messages-message-info">
         {{#ifEq type "outgoing"}}   
             {{#if isRead}}
-                <img src={{icons.readMessageIcon}} alt="" class="chats-main__messages-message-info-icon">
+                <img src={{icons.readMessageIcon}} alt="read message" class="chats-main__messages-message-info-icon">
             {{/if}}
         {{/ifEq}}
         <span class="chats-main__messages-message-info-time">{{date}}</span>

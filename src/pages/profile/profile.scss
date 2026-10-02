@@ -8,7 +8,7 @@
         width: 100%;
     }
     &-sidebar {
-        background: #FBFBFB;
+        background: v.$sidebar-bg-color;
         min-width: 64px;
         border: 1px solid v.$border-color;
         display: flex;
@@ -55,7 +55,7 @@
             &-item {
                 padding: 10px 0;
                 text-align: left;
-                font-size: v.$font-large;
+                font-size: v.$font-size-13;
                 border-bottom: 1px solid v.$border-color;
                 text-decoration: none;
                 color: v.$main-color;
@@ -66,7 +66,7 @@
                 
                 &:last-child {
                     border-bottom: none;
-                    color: #FF0000;
+                    color: v.$danger-color;
                 }
             }
         }
@@ -76,8 +76,8 @@
             min-width: 280px;
             margin: 0 auto;
             text-align: center;
-            font-size: v.$font-large;
-            color: #FFFFFF;
+            font-size: v.$font-size-13;
+            color: v.$btn-text-color;
             background: v.$main-color;
             border: none;
             border-radius: 8px;

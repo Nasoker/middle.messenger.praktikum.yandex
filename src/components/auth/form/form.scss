@@ -18,7 +18,7 @@
         flex-direction: column;
         padding: 50px 30px 30px 30px;
         border-radius: 16px;
-        box-shadow: 0px 0px 6px 0px #00000024;
+        box-shadow: 0px 0px 6px 0px v.$shadow-color;
 
         &.register {
             max-height: 620px;
@@ -33,13 +33,13 @@
 
 
         &__title {
-            font-size: v.$font-h2;
+            font-size: v.$font-size-20;
             text-align: center;
             margin: 0;
         }
 
         &__button {
-            font-size: v.$font-large;
+            font-size: v.$font-size-13;
             cursor: pointer;
             text-align: center;
             background: v.$main-color;

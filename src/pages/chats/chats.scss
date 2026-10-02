@@ -9,7 +9,7 @@
 
     &-sidebar {
         flex: 0 0 310px;
-        background-color: #FBFBFB;
+        background-color: v.$sidebar-bg-color;
         border-right: 1px solid v.$border-color;
         padding-top: 21px;
 
@@ -17,7 +17,7 @@
             padding: 0 10px;
 
             &-link {
-                font-size: 12px;
+                font-size: v.$font-size-12;
                 text-align: right;
                 color: v.$secondary-text-color;
                 text-decoration: none;
@@ -39,13 +39,13 @@
             padding: 0 10px;
 
             &::placeholder {
-                font-size: 12px;
+                font-size: v.$font-size-12;
                 text-align: center;
                 color: v.$secondary-text-color;
             }
 
             &-wrapper {
-               background-color: #EFEFEF;
+               background-color: v.$field-bg-color;
                padding: 10px;
                border-radius: 5px;
                margin-bottom: 14px;
@@ -82,8 +82,8 @@
                 }
 
                 &-name {
-                    font-size: v.$font-large;
-                    color: #1E1E1E;
+                    font-size: v.$font-size-13;
+                    color: v.$text-color;
                     font-weight: 600;
                 }
             }
@@ -136,10 +136,10 @@
                 border: none;
                 padding: 10px 20px;
                 border-radius: 30px;
-                background: #EFEFEF;
+                background: v.$field-bg-color;
 
                 &::placeholder {
-                    font-size: 12px;
+                    font-size: v.$font-size-12;
                     color: v.$secondary-text-color;
                 }
             }

@@ -3,7 +3,7 @@
 .chats-main__messages-message {
     &.incoming {
         align-self: flex-start;
-        background: #F8F8F8;
+        background: v.$incoming-message-bg-color;
         border-radius: 0 10px 10px 10px;
 
         .chats-main__messages-message-text::after {
@@ -20,14 +20,14 @@
     max-width: 402px;
     padding: 11px;
     position: relative;
-    background: #E4EDFD;
+    background: v.$highlight-bg-color;
     border-radius: 10px 10px 0 10px;
 
     &-text {
         margin: 0;
-        font-size: 12px;
+        font-size: v.$font-size-12;
         line-height: 15px;
-        color: #1E1E1E;
+        color: v.$text-color;
         white-space: pre-wrap;
 
         &::after {
@@ -53,9 +53,9 @@
         }
 
         &-time {
-            font-size: v.$font-small;
+            font-size: v.$font-size-9;
             line-height: 1;
-            color: #3369F3;
+            color: v.$main-color;
             white-space: nowrap;
         }
     }
