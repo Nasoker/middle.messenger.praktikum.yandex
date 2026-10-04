@@ -27,8 +27,8 @@ export const mockInputs = {
             type: "text",
             label: "Имя",
         },
-        lastName: {
-            name: "last_name",
+        secondName: {
+            name: "second_name",
             type: "text",
             label: "Фамилия",
         },
@@ -70,8 +70,8 @@ export const mockInputs = {
             value: "Иван",
             disabled: true,
         },
-        lastName: {
-            name: "last_name",
+        secondName: {
+            name: "second_name",
             type: "text",
             label: "Фамилия",
             value: "Иванов",
@@ -131,8 +131,8 @@ export const mockInputs = {
             label: "Имя",
             value: "Иван",
         },
-        lastName: {
-            name: "last_name",
+        secondName: {
+            name: "second_name",
             type: "text",
             label: "Фамилия",
             value: "Иванов",
