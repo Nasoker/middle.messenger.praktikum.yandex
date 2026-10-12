@@ -1,0 +1,8 @@
+@use "../../../styles/variables" as v;
+
+.link{
+    font-size: v.$font-size-11;
+    color: v.$main-color;
+    text-align: center;
+    text-decoration: none;
+}
